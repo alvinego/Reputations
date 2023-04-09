@@ -1,10 +1,11 @@
 import { View, Text } from 'react-native'
-import React from 'react'
+import React from 'react';
+import Post from '../../components/Post';
 
 const Home = () => {
   return (
     <View>
-      <Text>Home Screen</Text>
+      <Post />
     </View>
   )
 };

@@ -25,7 +25,6 @@ const App = () => {
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <AntDesign name={'stepforward'} size={30}/>
       <Home />
     </SafeAreaView>
   );
