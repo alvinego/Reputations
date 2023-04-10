@@ -18,8 +18,10 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-end',
     },
     rightContainer: {
-        height: '100%',
         alignSelf: 'flex-end',
+        justifyContent:  'space-between',
+        height: 150,
+        alignItems: 'center',
     },
     bottomContainer: {    
         padding: 10,
@@ -46,7 +48,26 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight: '300',
         marginLeft: 5,
-    }
+    },
+    profilePictureContainer: {},
+    profilePicture: {
+        width: 40,
+        height: 40,
+        borderRadius: 20,
+        borderWidth: 2,
+        borderColor: '#fff',
+        marginRight: 10,
+    },
+    iconContainer: {
+        alignItems: 'center',
+    },
+    statsLabel: {
+        color: '#fff',
+        alignSelf: 'center',
+        fontSize: 12,
+    },
+    
+
  
 });
 

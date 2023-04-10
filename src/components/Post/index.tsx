@@ -1,8 +1,11 @@
-import { View, Text, TouchableWithoutFeedback } from 'react-native'
+import { View, Text, TouchableWithoutFeedback, Image } from 'react-native'
 import React, { useState } from 'react';
 import Video from 'react-native-video';
 import styles from './styles';
 import Entypo from 'react-native-vector-icons/Entypo';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import Fontisto from 'react-native-vector-icons/Fontisto';
 
 const Post = () => {
 
@@ -26,8 +29,23 @@ const Post = () => {
       </TouchableWithoutFeedback>
       <View style={styles.ulcontainer}>
         <View style={styles.rightContainer}>
-          <Text style={{fontSize: 20, color: 'white'}}>The Side Component</Text>
+          <View style={styles.profilePictureContainer}>
+            <Image style={styles.profilePicture} source={{uri: 'https://static.onecms.io/wp-content/uploads/sites/6/2020/06/16/JohnLegend_05_1161_G.jpg'}}/>
+          </View>  
+          <View style={styles.iconContainer}>
+          <AntDesign name={'heart'} size={30} />
+              <Text style={styles.statsLabel}>245</Text>
+            </View>
+            <View style={styles.iconContainer}>
+            <FontAwesome name={'commenting'} size={30} color="white" />
+              <Text style={styles.statsLabel}>245</Text>
+            </View>
+            <View style={styles.iconContainer}>
+            <Fontisto name={'share-a'} size={25} color="white" />
+              <Text style={styles.statsLabel}>245</Text>
+            </View>
         </View>
+
         <View style={styles.bottomContainer}>
           <Text style={styles.handle}>@davidoadeleke</Text>
           <Text style={styles.description}>The many men Album</Text>
