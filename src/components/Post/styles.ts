@@ -8,9 +8,17 @@ const styles = StyleSheet.create({
         bottom: 0,
         right: 0,
     },
+    videoPlayButton: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        bottom: 0,
+        right: 0,
+        zIndex: 100,
+    },
     container: {
         width: '100%',
-        height: Dimensions.get('window').height
+        height: Dimensions.get('window').height*0.45
         ,
     },
     ulcontainer: {
@@ -22,10 +30,14 @@ const styles = StyleSheet.create({
         justifyContent:  'space-between',
         height: 150,
         alignItems: 'center',
+        marginBottom: 25,
     },
     bottomContainer: {    
         padding: 10,
         paddingBottom: 30,
+        flexDirection: 'row',
+        alignItems: 'flex-start',
+        justifyContent: 'space-between',
     },
     handle: {
         color: '#fff',
@@ -56,7 +68,8 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         borderWidth: 2,
         borderColor: '#fff',
-        marginRight: 10,
+        //marginRight: 10,
+        marginBottom: 15,
     },
     iconContainer: {
         alignItems: 'center',
@@ -66,6 +79,14 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         fontSize: 12,
     },
+    songImage: {
+        width: 35,
+        height: 35,
+        borderRadius: 25,
+        borderWidth: 5,
+        borderColor: '#4c4c4c',
+        marginTop: 25,
+    }
     
 
  
