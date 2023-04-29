@@ -6,11 +6,12 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Fontisto from 'react-native-vector-icons/Fontisto';
+import TextAnimator from '../TextAnimator';
 
 const Post = (props: any) => {
   
   const[post, setPost] = useState(props.post);
-  //const { post } = props;
+  
 
   const [paused, setPaused] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
@@ -29,6 +30,7 @@ const Post = (props: any) => {
   }
 
   return (
+    <View>
     <View style={styles.container}>
       <TouchableWithoutFeedback  onPress={onPlayPausePress} style={styles.videoPlayButton}>
         <View>
@@ -74,6 +76,41 @@ const Post = (props: any) => {
         </View>
       </View>
       </TouchableWithoutFeedback>
+    </View>
+    <View style={styles.secContainer}>
+
+    </View>
+    <View>
+    <View style={styles.statsContainer}>
+      <View >
+        <View>
+        <Text style={styles.postStatsLabel}> {post.firstName} {post.lastName} </Text>
+        <Text style={styles.postStatsLabel}> {post.lastName} </Text>
+        {/*  */}
+        </View>
+        <View>
+        <Text style={styles.postStatsLabel}> {post.position} from {post.tenure} </Text>
+        </View>
+        <Text style={styles.postStatsLabel}> {post.nickName} </Text>
+        
+      </View>
+      <View>
+        <Text> Slaps: {post.slaps} </Text>
+        <Text> Salutes: {post.salutes} </Text>
+        <Text> Verdict: {post.verdict} </Text>
+        <Text> RATING: {post.rating} </Text>
+      </View>  
+    </View>
+    </View>
+    <View>
+        <TextAnimator 
+        /*
+        content=''
+        textStyle={styles.textStyle}
+        style={styles.textAnimatorContainer}
+         */
+        />
+     </View>
     </View>
   )
 }

@@ -1,0 +1,43 @@
+export default [
+    {
+        id: 'p1',
+        description: 'The govenor of Lagos',
+        firstName: 'Fashola',
+        lastName: 'Babtunde',
+        positionHeld: 'Governor',
+        salutes: 20123,
+        comments: 33,
+        slaps: 2541,
+      },
+      {
+        id: 'p2',
+        description: 'the useless govenor of kogi',
+        firstName: 'Bello',
+        lastName: 'Yahaya',
+        positionHeld: 'Governor',
+        salutes: 103,
+        comments: 33,
+        slaps: 15541,
+      },
+      {
+        id: 'p3',
+        description: 'Ex governor of Edo State',
+        firstName: 'Oshiomole',
+        lastName: 'Adams',
+        positionHeld: 'Senator',
+        salutes: 7323,
+        comments: 313,
+        slaps: 5413,
+      },
+      {
+        id: 'p4',
+        description: 'The most useless govenor in Nigeria',
+        firstName: 'Ifeanyi',
+        lastName: 'Okowa',
+        positionHeld: 'Governor',
+        salutes: 23,
+        comments: 3523,
+        slaps: 23971,
+      }, 
+      
+]

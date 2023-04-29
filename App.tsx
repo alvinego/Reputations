@@ -14,6 +14,7 @@ import  AntDesign from 'react-native-vector-icons/AntDesign';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import Home from './src/screens/Home';
+import PostStats from './src/components/PostStats';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -26,6 +27,7 @@ const App = () => {
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <Home />
+      {/* <PostStats /> */}
     </SafeAreaView>
   );
 };

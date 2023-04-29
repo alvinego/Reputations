@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     },
     container: {
         width: '100%',
-        height: Dimensions.get('window').height*0.45
+        height: Dimensions.get('window').height*0.75
         ,
     },
     ulcontainer: {
@@ -86,10 +86,26 @@ const styles = StyleSheet.create({
         borderWidth: 5,
         borderColor: '#4c4c4c',
         marginTop: 25,
-    }
-    
-
- 
+    },
+    secContainer: {
+        flexDirection: 'column',
+        marginLeft: 15,
+    },
+    statsContainer: {
+        flexDirection: 'row',
+        margin: 10,
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        borderWidth: 2,
+        borderColor: '#4c4c4c',
+        borderRadius: 10,
+        padding: 10,
+        backgroundColor:'#dff0f0'
+    },
+    postStatsLabel: {
+        color: '#2b0545',
+        fontSize: 12,
+    }, 
 });
 
 
