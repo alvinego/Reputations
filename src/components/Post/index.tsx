@@ -103,13 +103,8 @@ const Post = (props: any) => {
     </View>
     </View>
     <View>
-        <TextAnimator 
-        /*
-        content=''
-        textStyle={styles.textStyle}
-        style={styles.textAnimatorContainer}
-         */
-        />
+        {/* <TextAnimator
+        /> */}
      </View>
     </View>
   )

@@ -9,26 +9,25 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
-import  AntDesign from 'react-native-vector-icons/AntDesign';
-
-import {Colors} from 'react-native/Libraries/NewAppScreen';
-import Home from './src/screens/Home';
-import PostStats from './src/components/PostStats';
+import {SafeAreaView, StatusBar} from 'react-native';
+import 'react-native-gesture-handler';
+import Navigation from './src/navigation';
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
+  /* const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
-
+ */
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <Home />
-      {/* <PostStats /> */}
+    <>
+    <StatusBar barStyle= 'light-content' /* {isDarkMode ? 'light-content' : 'dark-content'} */ />
+    <SafeAreaView style={{ flex:0, backgroundColor: 'red' }} />
+    <SafeAreaView style={{ backgroundColor:'red', flex: 1}}>
+      <Navigation />
     </SafeAreaView>
+    </>
   );
 };
 
